@@ -4,10 +4,6 @@ app = Flask("Scrapper")
 
 @app.route("/")
 def home():
-  return "Welcome to my site!"
-
-@app.route("/contact")
-def contact():
-  return "Contact Me!"
+  return "<h1>Job Serch</h1>"
 
 app.run(host="0.0.0.0")
