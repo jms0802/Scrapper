@@ -6,7 +6,7 @@
       section {
         display:grid;
         gap:20px;
-        grid-template-colums:repeat(4,50px);
+        grid-template-columns: repeat(4, 1fr);
       }
     </style>
   </head>
@@ -18,12 +18,12 @@
       <h4>Company</h4>
       <h4>Location</h4>
       <h4>Link</h4>
-      {% for job in jobs%}
+      {% for job in jobs %}
         <span>{{job.title}}</span>
         <span>{{job.company}}</span>
         <span>{{job.location}}</span>
         <a href="{{job.link}}" target="_blank">Apply</a>
-      {%endfor%}
+      {% endfor %}
     </section>
   </body>
 </html>
